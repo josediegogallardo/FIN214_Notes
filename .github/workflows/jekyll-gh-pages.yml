@@ -10,8 +10,8 @@ on:
     # unrelated files, you can make this run only if a file within that specific
     # folder has been modified.
     #
-    # paths:
-    # - some-subfolder/**
+    paths:
+    - FIN124_JB/**
 
 # This job installs dependencies, builds the book, and pushes it to `gh-pages`
 jobs:
@@ -31,7 +31,7 @@ jobs:
 
     - name: Install dependencies
       run: |
-        pip install -r FIN124_JB/requirements.txt
+        pip install -r requirements.txt
 
     # (optional) Cache your executed notebooks between runs
     # if you have config:
@@ -40,7 +40,7 @@ jobs:
     - name: cache executed notebooks
       uses: actions/cache@v3
       with:
-        path: FIN124_JB/_build/.jupyter_cache
+        path: _build/.jupyter_cache
         key: jupyter-book-cache-${{ hashFiles('requirements.txt') }}
 
     # Build the book
@@ -52,7 +52,7 @@ jobs:
     - name: Upload artifact
       uses: actions/upload-pages-artifact@v2
       with:
-        path: "FIN124_JB/_build/html"
+        path: "_build/html"
 
     # Deploy the book's HTML to GitHub Pages
     - name: Deploy to GitHub Pages
