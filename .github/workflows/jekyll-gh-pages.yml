@@ -3,8 +3,6 @@ name: deploy-book
 # Run this when the master or main branch changes
 on:
   push:
-    paths:
-      - 'FIN124_JB/**'
     branches:
       - master
       - main
@@ -12,7 +10,8 @@ on:
     # If your git repository has the Jupyter Book within some-subfolder next to
     # unrelated files, you can make this run only if a file within that specific
     # folder has been modified.
-    #
+    # paths:
+    # - some-subfolder/**
 
 # This job installs dependencies, builds the book, and pushes it to `gh-pages`
 jobs:
@@ -32,7 +31,7 @@ jobs:
 
     - name: Install dependencies
       run: |
-        pip install -r requirements.txt
+        pip install -r FIN124_JB/requirements.txt
 
     # (optional) Cache your executed notebooks between runs
     # if you have config:
@@ -41,7 +40,7 @@ jobs:
     - name: cache executed notebooks
       uses: actions/cache@v3
       with:
-        path: _build/.jupyter_cache
+        path: FIN124_JB/_build/.jupyter_cache
         key: jupyter-book-cache-${{ hashFiles('requirements.txt') }}
 
     # Build the book
@@ -53,7 +52,7 @@ jobs:
     - name: Upload artifact
       uses: actions/upload-pages-artifact@v2
       with:
-        path: "_build/html"
+        path: "FIN124_JB/_build/html"
 
     # Deploy the book's HTML to GitHub Pages
     - name: Deploy to GitHub Pages
