@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>1. Visualización de una Serie de Tiempo &#8212; My sample book</title>
+    <title>Regresión lineal &#8212; My sample book</title>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -132,7 +132,7 @@ const thebe_selector_output = ".output, .cell_output"
  </li>
  <li class="toctree-l1 current active">
   <a class="current reference internal" href="#">
-   1. Visualización de una Serie de Tiempo
+   Regresión lineal
   </a>
  </li>
 </ul>
@@ -341,17 +341,17 @@ title="Print to PDF"
     </div>
     <nav id="bd-toc-nav" aria-label="Page">
         <ul class="visible nav section-nav flex-column">
- <li class="toc-h1 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#visualizacion-de-una-serie-de-tiempo">
    1. Visualización de una Serie de Tiempo
   </a>
  </li>
- <li class="toc-h1 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#regresion-lineal">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id1">
    2. Regresión Lineal
   </a>
  </li>
- <li class="toc-h1 nav-item toc-entry">
+ <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#prueba-de-hipotesis">
    3. Prueba de Hipótesis
   </a>
@@ -365,7 +365,7 @@ title="Print to PDF"
         <div class="col pl-md-3 pl-lg-5 content-container">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>1. Visualización de una Serie de Tiempo</h1>
+                <h1>Regresión lineal</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
@@ -375,17 +375,17 @@ title="Print to PDF"
                         </div>
                         <nav aria-label="Page">
                             <ul class="visible nav section-nav flex-column">
- <li class="toc-h1 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#visualizacion-de-una-serie-de-tiempo">
    1. Visualización de una Serie de Tiempo
   </a>
  </li>
- <li class="toc-h1 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#regresion-lineal">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id1">
    2. Regresión Lineal
   </a>
  </li>
- <li class="toc-h1 nav-item toc-entry">
+ <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#prueba-de-hipotesis">
    3. Prueba de Hipótesis
   </a>
@@ -400,8 +400,10 @@ title="Print to PDF"
                 
               <div>
                 
-  <section id="visualizacion-de-una-serie-de-tiempo">
-<h1>1. Visualización de una Serie de Tiempo<a class="headerlink" href="#visualizacion-de-una-serie-de-tiempo" title="Permalink to this headline">#</a></h1>
+  <section class="tex2jax_ignore mathjax_ignore" id="regresion-lineal">
+<h1>Regresión lineal<a class="headerlink" href="#regresion-lineal" title="Permalink to this headline">#</a></h1>
+<section id="visualizacion-de-una-serie-de-tiempo">
+<h2>1. Visualización de una Serie de Tiempo<a class="headerlink" href="#visualizacion-de-una-serie-de-tiempo" title="Permalink to this headline">#</a></h2>
 <p>De la web del BCRP obtenga la evolución del Índice Generalizado de la Bolsa de Valores de Lima (IGBVL), el precio del cobre y el precio del petróleo, en términos mensuales. Con ello realice lo siguiente:</p>
 <p><strong>1.1.	Gráfique las 3 variables</strong></p>
 <div class="cell docutils container">
@@ -416,9 +418,6 @@ title="Print to PDF"
 
 <span class="kn">from</span> <span class="nn">scipy.stats</span> <span class="kn">import</span> <span class="n">t</span>
 <span class="kn">from</span> <span class="nn">datetime</span> <span class="kn">import</span> <span class="n">date</span>
-
-<span class="kn">import</span> <span class="nn">warnings</span>
-<span class="n">warnings</span><span class="o">.</span><span class="n">filterwarnings</span><span class="p">(</span><span class="s1">&#39;ignore&#39;</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -439,7 +438,7 @@ title="Print to PDF"
 <div class="cell_output docutils container">
 <div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
 <span class="ne">FileNotFoundError</span><span class="g g-Whitespace">                         </span>Traceback (most recent call last)
-<span class="o">~</span>\<span class="n">AppData</span>\<span class="n">Local</span>\<span class="n">Temp</span>\<span class="n">ipykernel_24280</span>\<span class="mf">3494179654.</span><span class="n">py</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+<span class="o">~</span>\<span class="n">AppData</span>\<span class="n">Local</span>\<span class="n">Temp</span>\<span class="n">ipykernel_11612</span>\<span class="mf">3494179654.</span><span class="n">py</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
 <span class="g g-Whitespace">      </span><span class="mi">1</span> <span class="c1"># Importar datos</span>
 <span class="ne">----&gt; </span><span class="mi">2</span> <span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_excel</span><span class="p">(</span><span class="sa">r</span><span class="s2">&quot;.\_data\IGBVL.xlsx&quot;</span><span class="p">)</span>
 <span class="g g-Whitespace">      </span><span class="mi">3</span> <span class="c1"># Generación de serie tipo fecha y asignación de índice</span>
@@ -660,8 +659,8 @@ $<span class="math notranslate nohighlight">\( \dfrac{\ln y_{t}}{\ln y_{n}} = \d
 <p>Por lo tanto diferencia entre la diferencia como cambio porcentual y como logaritmos se debe a que esta última es una aproximación en un entorno cercano a cero
 $<span class="math notranslate nohighlight">\(r \approx \Delta \%\)</span>$</p>
 </section>
-<section id="regresion-lineal">
-<h1>2. Regresión Lineal<a class="headerlink" href="#regresion-lineal" title="Permalink to this headline">#</a></h1>
+<section id="id1">
+<h2>2. Regresión Lineal<a class="headerlink" href="#id1" title="Permalink to this headline">#</a></h2>
 <p>Tome en cuenta la primera diferencial anual de las variables de interés: IGBVL, Cobre y Petróleo; con el fin de estimar el siguiente modelo</p>
 <div class="math notranslate nohighlight">
 \[IGBVL_{t} = \beta_{0} + \beta_{1} Cobre_{t} + \beta_{2} Pretróleo_{t} + \epsilon_{t}\]</div>
@@ -800,7 +799,7 @@ Notes:
 </div>
 </section>
 <section id="prueba-de-hipotesis">
-<h1>3. Prueba de Hipótesis<a class="headerlink" href="#prueba-de-hipotesis" title="Permalink to this headline">#</a></h1>
+<h2>3. Prueba de Hipótesis<a class="headerlink" href="#prueba-de-hipotesis" title="Permalink to this headline">#</a></h2>
 <p>En una economía basada en la exportación de materias primas, el precio de sus productos de exportación, como el cobre, tiene un impacto positivo en sus ingresos. Por otro lado, el precio de los insumos, como el petróleo, influye negativamente a través del canal de los costos. En nuestro análisis del IGBVL, examinaremos el rol del precio del petróleo.</p>
 <p><strong>3.1. Realice una prueba de significancia (dos colas) sobre <span class="math notranslate nohighlight">\(\beta_{2}\)</span></strong></p>
 <div class="math notranslate nohighlight">
@@ -1095,6 +1094,7 @@ F-crit:3.028
 </div>
 </div>
 </div>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
