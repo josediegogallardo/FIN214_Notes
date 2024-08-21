@@ -21,6 +21,9 @@ import statsmodels.api as sm
 from scipy.stats import t
 from datetime import date
 
+import warnings
+warnings.filterwarnings('ignore')
+
 
 # In[2]:
 
