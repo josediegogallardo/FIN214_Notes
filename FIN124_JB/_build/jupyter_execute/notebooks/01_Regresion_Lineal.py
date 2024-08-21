@@ -1,6 +1,8 @@
 #!/usr/bin/env python
 # coding: utf-8
 
+# # Regresión lineal
+# 
 # ## 1. Visualización de una Serie de Tiempo
 # 
 # De la web del BCRP obtenga la evolución del Índice Generalizado de la Bolsa de Valores de Lima (IGBVL), el precio del cobre y el precio del petróleo, en términos mensuales. Con ello realice lo siguiente:
@@ -20,9 +22,6 @@ import statsmodels.api as sm
 
 from scipy.stats import t
 from datetime import date
-
-import warnings
-warnings.filterwarnings('ignore')
 
 
 # In[2]:
