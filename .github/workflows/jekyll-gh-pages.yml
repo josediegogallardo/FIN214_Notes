@@ -31,7 +31,7 @@ jobs:
 
     - name: Install dependencies
       run: |
-        pip install -r FIN214_Notes/FIN124_JB/requirements.txt
+        pip install -r FIN124_JB/requirements.txt
 
     # (optional) Cache your executed notebooks between runs
     # if you have config:
