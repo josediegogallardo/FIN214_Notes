@@ -1,11 +1,8 @@
-# Welcome to your Jupyter Book
+# Notas de clases prácticas de Econometría Financiera (FIN124-PUCP)
 
-This is a small sample book to give you a feel for how book content is
-structured.
-It shows off a few of the major file types, as well as some sample content.
-It does not go in-depth into any particular topic - check out [the Jupyter Book documentation](https://jupyterbook.org) for more information.
+El presente documento es una recopilación de las clases prácticas de Econometría Financiera dictadas con el uso de Python. 
 
-Check out the content pages bundled with this sample book to see more.
+El mismo se encuentra en proceso de desarrollo.
 
 ```{tableofcontents}
 ```
