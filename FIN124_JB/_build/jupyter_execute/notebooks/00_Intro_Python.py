@@ -20,7 +20,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 
-from IPython.display import Image
+from IPython.display import Image;
 
 
 # In[2]:
@@ -295,7 +295,7 @@ df = pd.DataFrame(datos)
 df
 
 
-# In[ ]:
+# In[25]:
 
 
 type(df)
@@ -305,7 +305,7 @@ type(df)
 # 
 # `date` Contiene el formato de una fecha
 
-# In[25]:
+# In[26]:
 
 
 from datetime import date
@@ -314,7 +314,7 @@ hoy = date.today()
 print(hoy)
 
 
-# In[26]:
+# In[27]:
 
 
 type(hoy)
@@ -322,7 +322,7 @@ type(hoy)
 
 # `datetime` Contiene mayor información adicional (timestamp) a la fecha
 
-# In[27]:
+# In[28]:
 
 
 from datetime import datetime
@@ -331,7 +331,7 @@ ahora = datetime.now()
 print(ahora)
 
 
-# In[28]:
+# In[29]:
 
 
 type(ahora)
