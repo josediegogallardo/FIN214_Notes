@@ -7,4 +7,5 @@ chapters:
 - file: markdown
 - file: notebooks
 - file: markdown-notebooks
+- file: notebooks/00_Intro_Python
 - file: notebooks/01_Regresion_Lineal
